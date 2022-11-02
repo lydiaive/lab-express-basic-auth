@@ -1,7 +1,10 @@
 <form action="/login" method="post">
-    <label for="userName">User Name:</label>
-    <input type="text" name="userName" placeholder="User Name">
+    <label for="username">User Name:</label>
+    <input type="text" name="username" placeholder="User Name" id="username">
     <label for="password">Password</label>
     <input type="password" name="password" id="password" placeholder="********">
     <button type="submit">Login</button>
 </form>
+{{#if errorMessage}}
+    <p>{{errorMessage}}</p>
+{{/if}}
